@@ -1,0 +1,103 @@
+<hmtl>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header{
+                background-color: #5a71bb;
+                text-align: center;
+                color: white;
+                padding: 20px 0;
+            }
+
+            .cadastro{
+                display: flex;
+                margin: 20px 0;
+                padding: 0 20px;
+            }
+            .cadastro input[type=text]{
+                flex: 1;
+                height: 40px;
+                padding-left: 20px;
+            }
+
+            .produto-single{
+                padding: 10px 20px;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+            }
+
+            .produto-single h3{
+                flex: 1;
+                margin: 5px;
+            }
+            .produto-single span{
+                font-weight: bold;
+                background-color: #5a71bb;
+                padding: 8px 10px;
+                border-radius: 20PX;
+                color: white;
+            }
+
+            .total{
+                margin: 20px;
+            }
+
+            .limpar{
+                background-color: rgb(192, 60, 60);
+                font-weight: bold;
+                padding: 8px 10px;
+                border-radius: 20PX;
+                color: white;
+                margin: 0 20px;
+            }
+
+            .deletar{
+                background-color: rgb(192, 60, 60);
+                font-weight: bold;
+                padding: 8px 10px;
+                border-radius: 20PX;
+                color: white;
+                margin: 0 5px;
+            }
+
+            .deletar{
+                cursor: pointer;
+            }
+
+            .limpar{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h2>App Lista de SuperMercado</h2>
+        </header>
+        <div class="cadastro">
+            <input type="text" placeholder="nome do produto..."
+            name="nome_produto" />
+            <input type="text" placeholder="valor do produto"
+            name="valor_produto" />
+            <input type="submit" name="acao" value="Cadastrar" />
+        </div>
+
+         <div class="produtos">
+            
+         </div>
+
+         <div class="total">
+            <h1>Total: R$0</h1>
+         </div>
+
+         <button class="limpar" name="limpar">Limpar Lista</button>
+
+        <script src="supermercado.js">
+
+        </script>
+    </body>
+</hmtl>

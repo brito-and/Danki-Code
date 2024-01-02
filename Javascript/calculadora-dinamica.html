@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Exercicio 03</title>
+    </head>
+    <body>
+
+        <script>
+            
+            //Número inicial
+            //Um Sinal (tipo de operação)
+            //Número final
+
+            var primeiroNumero = prompt("informe um número...");
+
+            var sinal = prompt("informe o sinal da operação...");
+
+            while(sinal != '-' && sinal != '+' && sinal != '*' && sinal != '/'){
+                alert('Por favor informe um sinal válido!');
+                 sinal = prompt ("informe o sinal da operação...");
+            }
+
+            var segundoNumero = prompt('Informe outro número...');
+
+            //Função para converter string em número
+            primeiroNumero = parseInt(primeiroNumero);
+            segundoNumero = parseInt(segundoNumero);
+
+            var resultadoFinal = 0;
+
+            if(sinal = "+"){
+                resultadoFinal = primeiroNumero + segundoNumero;
+            }else if(sinal = "-"){
+                resultadoFinal = primeiroNumero - segundoNumero;
+            }else if(sinal = "/"){
+                resultadoFinal = primeiroNumero / segundoNumero;
+            }else if(sinal = "*"){
+                resultadoFinal = primeiroNumero * segundoNumero;
+            }
+
+            alert('O resultado da operação é: '+resultadoFinal);
+            
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+                margin-left: 0;
+            }
+            .animEsquerda{
+                transition: 1s;
+                margin-left: 100px;
+                background-color: greenyellow;
+            }
+        </style>
+
+        <div class="box"></div>
+        <script>
+            var box = document.querySelectorAll('.box')[0];
+            /*
+            setTimeout(()=>{
+                box.classList.add('animEsquerda');
+            },1000*3)
+            */
+           box.addEventListener('click' ,()=>{
+            box.classList.add('animEsquerda');
+           })
+        </script>
+    </body>
+</html>
